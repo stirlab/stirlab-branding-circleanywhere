@@ -40,7 +40,7 @@ db.sessions.push({
 	"session-key": "a7d6e589-f0f9-4290-943a-4f90652ea6df",
 	creationKey: "5908c8",
 	isPermalinkSession: true,
-	"hangout-id": "https://hangouts.google.com/hangouts/_/w4axbux73vcmlixumxrk5hlrcye",
+	"hangout-url": "https://hangouts.google.com/hangouts/_/w4axbux73vcmlixumxrk5hlrcye",
 });
 db.sessions.push({
 	id: 2,
@@ -53,7 +53,7 @@ db.sessions.push({
 	"session-key": "4676dede-49a2-4c92-b94e-7fc0041d7d58",
 	creationKey: "b74271",
 	isPermalinkSession: true,
-	"hangout-id": "https://hangouts.google.com/hangouts/_/vrwapbspangf7oeoga7gta27vee",
+	"hangout-url": "https://hangouts.google.com/hangouts/_/vrwapbspangf7oeoga7gta27vee",
 });
 
 db.users = [];
