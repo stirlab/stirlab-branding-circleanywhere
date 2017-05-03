@@ -1,1 +1,1 @@
-Branding for [https://connect.circleanywhere.com](https://connect.circleanywhere.com).
+Branding/config for [https://connect.circleanywhere.com](https://connect.circleanywhere.com).
