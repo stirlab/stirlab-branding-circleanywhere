@@ -30,7 +30,7 @@ db.events.push({
 
 db.sessions = [];
 db.sessions.push({
-	id: 1413,
+	id: 1,
 	title: "Alternate breakout #1",
 	description: "Click the button below to join the breakout",
 	shortCode: "alt-session-1",
@@ -43,7 +43,7 @@ db.sessions.push({
 	"hangout-id": "https://hangouts.google.com/hangouts/_/w4axbux73vcmlixumxrk5hlrcye",
 });
 db.sessions.push({
-	id: 1414,
+	id: 2,
 	title: "Alternate breakout #2",
 	description: "Click the button below to join the breakout",
 	shortCode: "alt-session-2",
