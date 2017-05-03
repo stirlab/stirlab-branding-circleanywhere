@@ -31,7 +31,7 @@ db.events.push({
 db.sessions = [];
 db.sessions.push({
 	id: 1413,
-	title: "Alternate session #1",
+	title: "Alternate breakout #1",
 	description: "Click the button below to join the breakout",
 	shortCode: "alt-session-1",
 	joinCap: 10,
@@ -44,7 +44,7 @@ db.sessions.push({
 });
 db.sessions.push({
 	id: 1414,
-	title: "Alternate session #2",
+	title: "Alternate breakout #2",
 	description: "Click the button below to join the breakout",
 	shortCode: "alt-session-2",
 	joinCap: 10,
