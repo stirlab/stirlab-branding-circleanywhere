@@ -1,13 +1,26 @@
 var config = {};
 
 config.name = 'CircleAnywhere';
+
 config.mainSiteUrl = 'http://circleanywhere.com';
 config.termsUrl = 'http://circleanywhere.com/terms';
 config.privacyUrl = 'http://circleanywhere.com/privacy';
 config.supportUrl = 'http://circleanywhere.com/support';
 config.faqUrl = 'http://circleanywhere.com/faq';
 config.signupUrl = 'https://payment.circleanywhere.com/signup';
+config.manageSubscriptionUrl = 'https://payment.circleanywhere.com/manage-subscription';
+
 config.twitterUsername = 'CircleAnywhere';
+
+config.email = {};
+config.email.event = {};
+config.email.event.register = 'ca-event-register';
+config.email.event.registerInvite = 'ca-event-register-invite';
+config.email.event.registerMessage = 'ca-event-register-message';
+
+config.template = {};
+config.template.loungeInstructions = 'lounge-instructions.ejs';
+config.template.signup = 'signup.ejs';
 
 module.exports.config = config;
 

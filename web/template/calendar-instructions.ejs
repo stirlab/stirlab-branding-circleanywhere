@@ -1,0 +1,17 @@
+        <% if (!user || !(user.isSuperuser() || user.hasPerm("createEvents") || user.hasPerm("joinEvents"))) { %>
+          <% include ../_signup_button.ejs %>
+          <p>
+              Attending most events requires a subscription, sign up by clicking
+              the button to the right.
+          </p>
+        <% } %>
+        <p>
+            All Circling Lab events have two facilitators, and a maximum of
+            twenty-two participants.
+        </p>
+        <p>
+            If an event is full or locked, you may want to visit our
+            <strong>
+                <a href="/lounge/instructions">lounge</a>
+            </strong>
+        </p>

@@ -1,0 +1,19 @@
+<% include ../../_header.ejs %>
+<% include ../../_navbar.ejs %>
+
+<div class="container signup-container" id='signup-list'>
+      <h3 class="signupTitle">Sign up</h3>
+      <p class="description">
+        Circle Anywhere events (other than specifically listed free events)
+        require a subscription.
+      </p>
+
+      <div class="links">
+        <% include ../_signup_button.ejs %>
+        <a href="<%- siteConfig.mainSiteUrl %>" class="learn-more-link" target="_blank"><button class="btn btn-primary learn-more-button">Learn more</button></a>
+      </div>
+</div>
+
+<%- requireScripts("/public/js/header-basic.js") %>
+<% include ../../_page_footer.ejs %>
+<% include ../../_analytics.ejs %>
