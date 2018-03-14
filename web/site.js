@@ -36,7 +36,7 @@ db.events = [];
 db.events.push({
   title:"CircleAnywhere Lounge",
   shortName:"lounge",
-  description: "Welcome to the CircleAnywhere Lounge! We provide the lounge as a community space for members to connect when no Circling events are scheduled. It currently supports twenty-four total users, inside three eight-person breakouts.",
+  description: "Welcome to the CircleAnywhere Lounge! We provide the lounge as a community space for people to connect when no Circling events are scheduled. It currently supports twenty-four total users, inside three eight-person breakouts.",
   calendarId: "member",
   dateAndTime: "2015-01-01T00:00:00+00:00",
   open: true,
