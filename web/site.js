@@ -44,7 +44,7 @@ db.events.push({
   facilitatorLead: "111684086248650210604",
   timeZoneValue: "Etc/UTC",
   duration: 0,
-  overflowUserCap: 24,
+  userCapacity: "medium",
 });
 
 db.sessions = [];
