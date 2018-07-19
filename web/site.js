@@ -8,6 +8,7 @@ config.privacyUrl = 'http://circleanywhere.com/privacy';
 config.supportUrl = 'http://circleanywhere.com/support';
 config.faqUrl = 'http://circleanywhere.com/faq';
 config.signupUrl = 'https://payment.circleanywhere.com/signup';
+config.techReportUrl = 'https://3.basecamp.com/3245986/buckets/2096187/todolists/1191126712';
 config.manageSubscriptionUrl = 'https://payment.circleanywhere.com/manage-subscription';
 
 config.twitterUsername = 'CircleAnywhere';
