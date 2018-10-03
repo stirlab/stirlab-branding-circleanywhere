@@ -78,7 +78,7 @@ db.sessions.push({
 
 db.users = [];
 db.users.push({
-  google_json: {
+  googleJson: {
     id: "111684086248650210604",
     email: "circleanywhere@gmail.com",
     verified_email: true,
@@ -90,25 +90,20 @@ db.users.push({
     locale: "en",
   },
   displayName: "Circle Anywhere",
-  emails: [
-    {
-      value: "circleanywhere@gmail.com",
-    }
-  ],
-  id: "111684086248650210604",
+  email: "circleanywhere@gmail.com",
+  googleUserId: "111684086248650210604",
   link: "https://plus.google.com/111684086248650210604",
-  name: {
-    familyName: "Anywhere",
-    givenName: "Circle",
-  },
   picture: "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
-  provider: "google",
+  perms: {
+    memberOnce: true,
+  },
   superuser: true,
   completedTasks: completedTasks,
+  configuration: {},
 });
 
 db.users.push({
-  google_json: {
+  googleJson: {
     id: "112349864121259291250",
     email: "test.1.circleanywhere@gmail.com",
     verified_email: true,
@@ -119,27 +114,19 @@ db.users.push({
     locale: "en"
   },
   displayName: "Participant One",
-  emails: [
-    {
-      value: "test.1.circleanywhere@gmail.com"
-    }
-  ],
-  id: "112349864121259291250",
-  name: {
-    familyName: "One",
-    givenName: "Participant"
-  },
+  email: "test.1.circleanywhere@gmail.com",
+  googleUserId: "112349864121259291250",
   picture: "https://lh4.googleusercontent.com/-ox7q9IPfZhE/AAAAAAAAAAI/AAAAAAAAABE/_-70PCoNQVE/photo.jpg",
-  provider: "google",
   perms: {
     joinEvents: true,
     memberOnce: true,
   },
   completedTasks: completedTasks,
+  configuration: {},
 });
 
 db.users.push({
-  google_json: {
+  googleJson: {
     id: "106242390178717671247",
     email: "test.2.circleanywhere@gmail.com",
     verified_email: true,
@@ -150,23 +137,15 @@ db.users.push({
     locale: "en"
   },
   displayName: "Participant Two",
-  emails: [
-    {
-      value: "test.2.circleanywhere@gmail.com"
-    }
-  ],
-  id: "106242390178717671247",
-  name: {
-    familyName: "Two",
-    givenName: "Participant"
-  },
+  email: "test.2.circleanywhere@gmail.com",
+  googleUserId: "106242390178717671247",
   picture: "https://lh5.googleusercontent.com/-fUtKJ5vSdYc/AAAAAAAAAAI/AAAAAAAAAA0/QU6Gp0xdFOM/photo.jpg",
-  provider: "google",
   perms: {
     joinEvents: true,
     memberOnce: true,
   },
   completedTasks: completedTasks,
+  configuration: {},
 });
 
 for (var num = 0; num <= 59; num++) {
@@ -179,22 +158,15 @@ for (var num = 0; num <= 59; num++) {
   }
   var id = prefix + String(num);
   db.users.push({
-    id: id,
+    googleUserId: id,
     displayName: "Test User " + num,
-    emails: [{
-      value: "test.user." + num + "@circleanywhere.com",
-    }],
+    email: "test.user." + num + "@circleanywhere.com",
     picture: "https://connect.circleanywhere.com/public/img/custom/test-user-" + num + "-avatar.jpg",
     perms: {
       joinEvents: true,
       memberOnce: true,
     },
-    provider: "google",
-    name: {
-      familyName: "User " + num,
-      givenName: "Test",
-    },
-    google_json: {
+    googleJson: {
       id: id,
       email: "test.user." + num + "@circleanywhere.com",
       verified_email: true,
@@ -205,6 +177,7 @@ for (var num = 0; num <= 59; num++) {
       locale: "en",
     },
     completedTasks: completedTasks,
+    configuration: {},
   });
 }
 
