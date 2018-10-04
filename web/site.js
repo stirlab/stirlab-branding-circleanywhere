@@ -38,42 +38,30 @@ db.events.push({
   title:"CircleAnywhere Lounge",
   shortName:"lounge",
   description: "Welcome to the CircleAnywhere Lounge! We provide the lounge as a community space for people to connect when no Circling events are scheduled. It currently supports twenty-four total users, inside three eight-person breakouts.",
-  calendarId: "member",
-  dateAndTime: "2015-01-01T00:00:00+00:00",
+  calendarId: "member-birthday-circling",
+  eventStart: "2015-01-01T00:00:00+00:00",
   open: true,
-  sessionState: "open",
-  facilitatorLead: "111684086248650210604",
+  breakoutState: "open",
   timeZoneValue: "Etc/UTC",
   duration: 0,
   userCapacity: "medium",
+  // These are converted to user IDs.
+  owner_id: "111684086248650210604",
+  facilitator_lead_id: "111684086248650210604",
 });
 
-db.sessions = [];
-db.sessions.push({
-	id: 1,
-	title: "Alternate breakout #1",
-	description: "Click the button below to join the breakout",
-	shortCode: "alt-session-1",
-	joinCap: 10,
-	handUp: false,
-	adminPeekingIntoSession: "",
-	"session-key": "a7d6e589-f0f9-4290-943a-4f90652ea6df",
-	creationKey: "5908c8",
-	isPermalinkSession: true,
-	"hangout-url": "https://hangouts.google.com/hangouts/_/w4axbux73vcmlixumxrk5hlrcye",
+db.permalinks = [];
+db.permalinks.push({
+  title: "Alternate breakout #1",
+  description: "Click the button below to join the breakout",
+  shortName: "alt-session-1",
+  url: "https://hangouts.google.com/hangouts/_/w4axbux73vcmlixumxrk5hlrcye",
 });
-db.sessions.push({
-	id: 2,
-	title: "Alternate breakout #2",
-	description: "Click the button below to join the breakout",
-	shortCode: "alt-session-2",
-	joinCap: 10,
-	handUp: false,
-	adminPeekingIntoSession: "",
-	"session-key": "4676dede-49a2-4c92-b94e-7fc0041d7d58",
-	creationKey: "b74271",
-	isPermalinkSession: true,
-	"hangout-url": "https://hangouts.google.com/hangouts/_/vrwapbspangf7oeoga7gta27vee",
+db.permalinks.push({
+  title: "Alternate breakout #2",
+  description: "Click the button below to join the breakout",
+  shortName: "alt-session-2",
+  url: "https://hangouts.google.com/hangouts/_/vrwapbspangf7oeoga7gta27vee",
 });
 
 db.users = [];
