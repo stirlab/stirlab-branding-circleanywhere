@@ -2,7 +2,7 @@
 
 # Creates branding emails for the brand.
 
-TEMPLATES_DIR="/Users/hunmonk/git/circleanywhere/unhangout/custom/email_templates"
+TEMPLATES_DIR="/Users/hunmonk/git/stirlab/unhangout/lib/email_templates"
 TEMPLATING_SCRIPT="${TEMPLATES_DIR}/brand-template.sh"
 
 EMAIL_DIR=`dirname $0`
