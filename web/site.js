@@ -1,12 +1,14 @@
 var config = {};
 
 config.name = 'CircleAnywhere';
+config.domain="circleanywhere.com"
 
-config.mainSiteUrl = 'http://circleanywhere.com';
-config.termsUrl = 'http://circleanywhere.com/terms';
-config.privacyUrl = 'http://circleanywhere.com/privacy';
-config.supportUrl = 'http://circleanywhere.com/support';
-config.faqUrl = 'http://circleanywhere.com/faq';
+config.connectSiteUrl="https://connect.circleanywhere.com"
+config.mainSiteUrl = 'https://circleanywhere.com';
+config.termsUrl = 'https://circleanywhere.com/terms';
+config.privacyUrl = 'https://circleanywhere.com/privacy';
+config.supportUrl = 'https://circleanywhere.com/support';
+config.faqUrl = 'https://circleanywhere.com/faq';
 config.signupUrl = 'https://payment.circleanywhere.com/signup';
 config.techReportUrl = 'https://3.basecamp.com/3245986/buckets/2096187/todolists/1191126712';
 config.manageSubscriptionUrl = 'https://payment.circleanywhere.com/manage-subscription';
@@ -18,6 +20,15 @@ config.email.event = {};
 config.email.event.register = 'ca-event-register';
 config.email.event.registerInvite = 'ca-event-register-invite';
 config.email.event.registerMessage = 'ca-event-register-message';
+config.email.templateVariables = {};
+config.email.templateVariables.name = config.name;
+config.email.templateVariables.domain = config.domain;
+config.email.templateVariables.mainSiteUrl = config.mainSiteUrl;
+config.email.templateVariables.connectSiteUrl = config.connectSiteUrl;
+config.email.templateVariables.supportEmail = 'circleanywhere.help@gmail.com'
+config.email.templateVariables.backgroundColor = '#FFFFFF';
+config.email.templateVariables.accentColor = '#800000';
+config.email.templateVariables.accentColorDark = '#600000';
 
 config.template = {};
 config.template.loungeInstructions = 'lounge-instructions.ejs';
@@ -149,7 +160,7 @@ for (var num = 0; num <= 59; num++) {
     googleUserId: id,
     displayName: "Test User " + num,
     email: "test.user." + num + "@circleanywhere.com",
-    picture: "https://connect.circleanywhere.com/public/img/custom/test-user-" + num + "-avatar.jpg",
+    picture: config.connectSiteUrl + "/public/img/custom/test-user-" + num + "-avatar.jpg",
     perms: {
       joinEvents: true,
       memberOnce: true,
@@ -161,7 +172,7 @@ for (var num = 0; num <= 59; num++) {
       name: "Test User " + num,
       given_name: "Test",
       family_name: "User " + num,
-      picture: "https://connect.circleanywhere.com/public/img/custom/test-user-" + num + "-avatar.jpg",
+      picture: config.connectSiteUrl + "/public/img/custom/test-user-" + num + "-avatar.jpg",
       locale: "en",
     },
     completedTasks: completedTasks,
