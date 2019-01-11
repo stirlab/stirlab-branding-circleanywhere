@@ -5,7 +5,7 @@ config.domain="circleanywhere.com"
 
 config.connectSiteUrl="https://connect.circleanywhere.com"
 config.mainSiteUrl = 'https://circleanywhere.com';
-config.termsUrl = 'https://circleanywhere.com/terms';
+config.termsUrl = '/terms-of-use';
 config.privacyUrl = 'https://circleanywhere.com/privacy';
 config.supportUrl = 'https://circleanywhere.com/support';
 config.faqUrl = 'https://circleanywhere.com/faq';
