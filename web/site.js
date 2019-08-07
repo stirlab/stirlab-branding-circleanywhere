@@ -39,6 +39,7 @@ module.exports.config = config;
 var db = {};
 
 var completedTasks = {
+   agreeToTermsOfUse: 1496442154,
    setDisplayName: 1496442154,
    connectivityCheck: 1496442154,
    instructionalVideoShort: 1496442154,
@@ -88,8 +89,9 @@ db.users.push({
     picture: "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
     locale: "en",
   },
+  id: "111684086248650210604",
   displayName: "Circle Anywhere",
-  email: "circleanywhere@gmail.com",
+  emails: [{value: "circleanywhere@gmail.com"}],
   googleUserId: "111684086248650210604",
   link: "https://plus.google.com/111684086248650210604",
   picture: "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
@@ -112,8 +114,9 @@ db.users.push({
     picture: "https://lh4.googleusercontent.com/-ox7q9IPfZhE/AAAAAAAAAAI/AAAAAAAAABE/_-70PCoNQVE/photo.jpg",
     locale: "en"
   },
+  id: "112349864121259291250",
   displayName: "Participant One",
-  email: "test.1.circleanywhere@gmail.com",
+  emails: [{value: "test.1.circleanywhere@gmail.com"}],
   googleUserId: "112349864121259291250",
   picture: "https://lh4.googleusercontent.com/-ox7q9IPfZhE/AAAAAAAAAAI/AAAAAAAAABE/_-70PCoNQVE/photo.jpg",
   perms: {
@@ -135,8 +138,9 @@ db.users.push({
     picture: "https://lh5.googleusercontent.com/-fUtKJ5vSdYc/AAAAAAAAAAI/AAAAAAAAAA0/QU6Gp0xdFOM/photo.jpg",
     locale: "en"
   },
+  id: "106242390178717671247",
   displayName: "Participant Two",
-  email: "test.2.circleanywhere@gmail.com",
+  emails: [{value: "test.2.circleanywhere@gmail.com"}],
   googleUserId: "106242390178717671247",
   picture: "https://lh5.googleusercontent.com/-fUtKJ5vSdYc/AAAAAAAAAAI/AAAAAAAAAA0/QU6Gp0xdFOM/photo.jpg",
   perms: {
@@ -157,9 +161,10 @@ for (var num = 0; num <= 59; num++) {
   }
   var id = prefix + String(num);
   db.users.push({
+    id: id,
     googleUserId: id,
     displayName: "Test User " + num,
-    email: "test.user." + num + "@circleanywhere.com",
+    emails: [{value: "test.user." + num + "@circleanywhere.com"}],
     picture: config.connectSiteUrl + "/public/img/custom/test-user-" + num + "-avatar.jpg",
     perms: {
       joinEvents: true,
