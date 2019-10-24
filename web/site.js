@@ -9,7 +9,7 @@ config.termsUrl = '/terms-of-use';
 config.privacyUrl = 'https://circleanywhere.com/privacy';
 config.supportUrl = 'https://circleanywhere.com/support';
 config.faqUrl = 'https://circleanywhere.com/faq';
-config.signupUrl = 'https://payment.circleanywhere.com/signup';
+config.signupUrl = 'https://circlingeurope.mykajabi.com/offers/a6cQkF8R/checkout';
 config.techReportUrl = 'https://3.basecamp.com/3245986/buckets/2096187/todolists/1191126712';
 config.manageSubscriptionUrl = 'https://payment.circleanywhere.com/manage-subscription';
 
